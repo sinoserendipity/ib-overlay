@@ -19,7 +19,7 @@ BASE_PACKAGES="$BASE_PACKAGES luci-compat"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-firewall-zh-cn"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-base-zh-cn"
 # 如果勾选了docker 务必保证软件包大小ROOTFS_PARTSIZE至少大于512 目前1024
-BASE_PACKAGES="$BASE_PACKAGES luci-i18n-dockerman-zh-cn"
+# BASE_PACKAGES="$BASE_PACKAGES luci-i18n-dockerman-zh-cn"
 # 文件管理器
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-filemanager-zh-cn"
 # openlist用来平替alist 但阿里镜像仓库暂时没有 若勾选此项需在repositories.conf中启用官方源
@@ -27,7 +27,7 @@ BASE_PACKAGES="$BASE_PACKAGES luci-i18n-filemanager-zh-cn"
 #BASE_PACKAGES="$BASE_PACKAGES luci-i18n-openlist-zh-cn"
 
 #打印机相关
-BASE_PACKAGES="$BASE_PACKAGES luci-i18n-p910nd-zh-cn"
+# BASE_PACKAGES="$BASE_PACKAGES luci-i18n-p910nd-zh-cn"
 #BASE_PACKAGES="$BASE_PACKAGES luci-i18n-openvpn-zh-cn"
 
 
@@ -36,14 +36,14 @@ BASE_PACKAGES="$BASE_PACKAGES luci-i18n-p910nd-zh-cn"
 # 使用条件:在extra-packages下放置了相关run或者ipk
 CUSTOM_PACKAGES=""
 # 第三方插件 文件传输 luci-app-filetransfer
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-lib-fs"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-lua-runtime"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-filetransfer"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-filetransfer-zh-cn"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-lib-fs"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-lua-runtime"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-filetransfer"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-filetransfer-zh-cn"
 # 第三方插件 argon主题 luci-theme-argon 紫色主题 3个ipk
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-theme-argon"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-argon-config-zh-cn"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-argon-config"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-theme-argon"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-argon-config-zh-cn"
+# CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-argon-config"
 
 # 第三方插件 istore 应用商店
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-store"
@@ -69,6 +69,13 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-argon-config"
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-homeproxy"
 # 第三方插件 luci-app-nikki
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-nikki-zh-cn"
+
+#自添加插件
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-tailscale"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-upnp"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-cloudflared"
+
 
 # ✅ 校验 CUSTOM_PACKAGES 中的包是否都存在于 packages_names.txt
 package_file="packages_names.txt"
