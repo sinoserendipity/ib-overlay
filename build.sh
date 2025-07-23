@@ -18,6 +18,7 @@ BASE_PACKAGES="$BASE_PACKAGES luci-i18n-package-manager-zh-cn"
 BASE_PACKAGES="$BASE_PACKAGES luci-compat"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-firewall-zh-cn"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-base-zh-cn"
+BASE_PACKAGES="$BASE_PACKAGES luci-app-upnp"
 # 如果勾选了docker 务必保证软件包大小ROOTFS_PARTSIZE至少大于512 目前1024
 # BASE_PACKAGES="$BASE_PACKAGES luci-i18n-dockerman-zh-cn"
 # 文件管理器
