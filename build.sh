@@ -20,6 +20,7 @@ BASE_PACKAGES="$BASE_PACKAGES luci-i18n-firewall-zh-cn"
 BASE_PACKAGES="$BASE_PACKAGES luci-i18n-base-zh-cn"
 BASE_PACKAGES="$BASE_PACKAGES luci-app-upnp"
 BASE_PACKAGES="$BASE_PACKAGES luci-app-vnstat2"
+BASE_PACKAGES="$BASE_PACKAGES luci-app-cloudflared"
 # 如果勾选了docker 务必保证软件包大小ROOTFS_PARTSIZE至少大于512 目前1024
 # BASE_PACKAGES="$BASE_PACKAGES luci-i18n-dockerman-zh-cn"
 # 文件管理器
@@ -71,10 +72,9 @@ CUSTOM_PACKAGES=""
 # 第三方插件 luci-app-nikki
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-nikki-zh-cn"
 
-#自添加插件 tailscale lucky & cloudflared
+#自添加插件 tailscale lucky
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-tailscale"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-cloudflared"
 
 # ✅ 校验 CUSTOM_PACKAGES 中的包是否都存在于 packages_names.txt
 package_file="packages_names.txt"
