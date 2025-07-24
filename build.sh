@@ -71,7 +71,7 @@ CUSTOM_PACKAGES=""
 # 第三方插件 luci-app-nikki
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-nikki-zh-cn"
 
-#自添加插件
+#自添加插件 tailscale lucky & cloudflared
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-tailscale"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-cloudflared"
