@@ -28,7 +28,7 @@ wget -c -O master.zip.tmp https://github.com/wukongdaily/ib-overlay/archive/refs
 ```
 [![Github](https://img.shields.io/badge/如果下载不动,可套用加速前缀,点这里前往-d6acef?logo=github&logoColor=fff&labelColor=000&style=for-the-badge)](https://wkdaily.cpolar.top/archives/1) 
 ``` 
-wget -c -O master.zip.tmp https://gh-proxy.com/https://github.com/wukongdaily/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
+wget -c -O master.zip.tmp https://gh-proxy.com/https://github.com/sinoserendipity/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
 
 ```
 ## 3、解压 master.zip 到当前目录(ImageBuilder的根目录)，去除无关文件
