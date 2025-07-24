@@ -23,7 +23,7 @@ cd openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64/
 ## 2、下载整个项目的 master.zip
 
 ```
-wget -c -O master.zip.tmp https://github.com/wukongdaily/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
+wget -c -O master.zip.tmp https://github.com/sinoserendipity/ib-overlay/archive/refs/heads/master.zip && mv -f master.zip.tmp master.zip
 
 ```
 [![Github](https://img.shields.io/badge/如果下载不动,可套用加速前缀,点这里前往-d6acef?logo=github&logoColor=fff&labelColor=000&style=for-the-badge)](https://wkdaily.cpolar.top/archives/1) 
