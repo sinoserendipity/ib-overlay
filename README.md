@@ -12,8 +12,6 @@ https://github.com/wukongdaily/AutoBuildImmortalWrt
 ```
 # 下载
 wget https://mirrors.aliyun.com/openwrt/releases/24.10.2/targets/x86/64/openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64.tar.zst
-# 或者 ImmortalWrt 源
-wget https://downloads.immortalwrt.org/releases/24.10.2/targets/x86/64/immortalwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64.tar.zst
 # 解压
 tar --use-compress-program=unzstd -xvf openwrt-imagebuilder-24.10.2-x86-64.Linux-x86_64.tar.zst
 # 进入ImageBuilder目录
