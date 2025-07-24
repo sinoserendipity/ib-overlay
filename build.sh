@@ -75,7 +75,9 @@ CUSTOM_PACKAGES=""
 
 #自添加插件 tailscale lucky
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-tailscale"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-tailscale-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-lucky"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-i18n-lucky-zh-cn"
 
 # ✅ 校验 CUSTOM_PACKAGES 中的包是否都存在于 packages_names.txt
 package_file="packages_names.txt"
